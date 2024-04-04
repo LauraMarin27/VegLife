@@ -1,0 +1,33 @@
+// Menu.scss
+
+.menuMainContainer {
+    background-color: #009688; /* Color de fondo del menú */
+    padding: 10px 20px; /* Espaciado interno */
+    display: flex; /* Usar flexbox para alinear elementos */
+    align-items: center; /* Alinear elementos verticalmente */
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    margin-right: auto; /* Empujar el título "Inicio" a la izquierda */
+  }
+  
+  .route {
+    margin-left: 20px; /* Espacio entre enlaces */
+  }
+  
+  .route span {
+    font-size: 18px;
+    color: #fff; /* Color del texto */
+    text-decoration: none;
+    padding: 10px;
+ /* Transición suave del color del texto */
+  }
+  
+  .route span:hover {
+    color: #c3fdff; /* Cambio de color al pasar el mouse */
+  }
+  
