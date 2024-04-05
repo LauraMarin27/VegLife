@@ -1,0 +1,24 @@
+.fondo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 0 auto 0;
+    text-align: center;
+    flex-direction: column;
+    background-image: url('../../../img/fondo.jpg');
+}
+.titulo{
+    line-height: 1.1;
+    font-weight: 700;
+    margin: 0 0 1rem;
+
+}
+.pa{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+

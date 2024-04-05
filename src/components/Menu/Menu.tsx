@@ -76,29 +76,32 @@ function Menu() {
   ]
 
   return(
+    <div className="total"> 
+        
 
         <div className="menuMainContainer">
           <Link to="/" className="title">
-            Inicio
+            Veg Life
           </Link>
+          <div className="menuItems">
+          
 
           {routesForLink.map((route) => (
 
             <div className="route" key={route.id}>
-
-           
-
-            <Link to={route.link} ><span>{route.title}</span></Link>
+            <Link to={route.link} ><span >{route.title}</span></Link>
 
             </div>
 
-          )
-
-             
+          ) 
 
             )}
+            </div>
+            
 
         </div>
+        </div>
+
 
   )
 

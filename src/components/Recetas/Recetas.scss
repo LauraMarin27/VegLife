@@ -1,0 +1,42 @@
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:900px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content:space-around;
+    
+}
+.receta{
+    width:200px ;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden; /* Para ocultar cualquier contenido que sobresalga */
+    transition: transform 0.3s ease; 
+    
+    
+    
+}
+
+
+.imagenes{
+    width: 100%; /* Establece un ancho del 100% para la imagen */
+  height: 200px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Escalar la imagen mientras se mantiene su relación de aspecto */
+  border-radius: 4px; 
+}
+.nombre{
+    text-align: center;
+}
+.total{
+    
+    margin: 20px;
+}
+.recetaCategoria{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
