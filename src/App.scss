@@ -1,0 +1,19 @@
+
+.container{
+    
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.menuContainer{
+    
+    flex: 0 0 auto;
+}
+.mainContainer{
+    display: flex;
+    align-items: center;
+    
+    
+    max-width: 1200px; // Define el ancho máximo del contenido
+    padding: 50px; // Agrega un espacio de relleno alrededor del contenido
+    
+}
+
