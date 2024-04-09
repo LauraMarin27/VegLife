@@ -19,7 +19,7 @@ const Recetas: React.FC = () => {
           throw new Error('No se pudieron cargar las recetas');
         }
         const data = await response.json();
-        const recetasData = data['-NuxgLsCZa5KD6rO1mkz'].recetas;
+        const recetasData = data['-Nv0RwBqqHD-0aK_aSwc'].recetas;
         const recetasArray: Receta[] = recetasData.map((receta: any) => ({
           nombre: receta.nombre,
           imagen: receta.imagen,

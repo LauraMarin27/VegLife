@@ -1,67 +1,103 @@
-// Menu.scss
-.total{
+.total {
   text-align: center;
-  
 }
 
 .menuMainContainer {
-    background-color: #D0DFD6; /* Color de fondo del menú */
-    padding: 20px 15px; /* Espaciado interno */
-    display: flex; /* Usar flexbox para alinear elementos */
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    
+  background-color: #f6e9d6;
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-    
-  }
+.title {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 15px;
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  gap: 15px;
+  transition: all 0.5s;
+  font-family: 'Times New Roman', Times, serif;
+  align-items: center;
   
+}
+.logotext{
+  display: block;
+  font-size: 50px;
+  text-align: center;
+}
+
+.menuItems {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menuItemsButton {
+  display: none; /* Ocultar el botón de menú por defecto */
+}
+.menuDropdown{
+  display: none;
+
+}
+
+.route {
+  margin-bottom: 20px;
+}
+
+.route span {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: flex;
+}
+
+.route:hover {
+  background-color: #86d74c;
+  color: black;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #86d74c;
+  color: black;
+}
+.logo{
+  width: 150px;
+  height: auto;
+
+}
+
+@media screen and (max-width: 768px) {
   .title {
-    display: flex;
-    padding: 10px 15px;
+    
     font-size: 50px;
-    font-weight: bold;
-    color: black; /* Color del texto */
-    
-    gap: 15px;
-    transition: all 0.5s;
-    font-family:'Times New Roman', Times, serif;
+    padding-bottom: 20px;
   }
-  
-  
-  .route {
-    margin-bottom: 20px;
-   
-  }
-  
-  .route span {
-    font-size: 24px;
-    color: black; /* Color del texto */
-    text-decoration: none;
-    padding: 10px;
-    display: flex; /* Añadido */
-    
-    
- /* Transición suave del color del texto */
-  }
-  .route:hover{
-    background-color:#009688 ;
-    color:black;
-    transition: all 0.5s;
-    text-decoration: none;
-  }
-  .active{
-    background-color:#009688;
-    color: black;
-   
 
-  } 
-  .menuItems{
-    display: flex;
+  .menuItems {
+    display: none; 
+    
+  }
+
+  .menuItemsButton {
+    display: flex; /* Mostrar el botón de menú */
     align-items: center;
-    flex-direction: row;
-   justify-content: space-around;
-   
-
+    justify-content: center;
+    padding: 10px;
+    background-color: #86d74c;
+    color: white;
+    cursor: pointer;
   }
-  
+  .menuDropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+}
